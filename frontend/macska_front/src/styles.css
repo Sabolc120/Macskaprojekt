@@ -1,0 +1,25 @@
+
+*{
+    font-family: "Nunito", serif;
+}
+html, body, .container-fluid {
+    height: 100%;
+    background-color: #FBFBFB;
+    margin: 0;
+    padding: 0;
+}
+.catname{
+    font-size: 26px;
+    text-align:center;
+}
+.catPicture{
+    height:300px;
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    color: #C5BAFF;
+}
+/* Fehér: FBFBFB, Világos kék: E8F9FF, Sötétebb kék: C4D9FF, Lila: C5BAFF*/

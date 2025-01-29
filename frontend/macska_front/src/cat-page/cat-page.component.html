@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center pt-3 pb-3 title">Macska profil</h1>
+        <div class="box mx-auto">
+            <div class="col-sm-12">
+                <div class="catname">{{cats.catname}}</div>
+                <img [src]="cats.catpicture + '.jpg'" class="catPicture" alt='Macska képe'>
+                <div class="stats">
+                    Meglátogatták: {{cats.visits}} alkalommal.
+                </div>
+                <div class="catDesc">{{cats.description}}</div>
+            </div>
+            <div class="seperator-icon">
+                <img src="/cat-paw.ico" alt="seperator-icon" width="50" height="50" alt="Seperator">
+            </div>
+        </div>
+        <button type="button" class="button visit" (click)="updateCat(cats.id)">Meglátogat</button>
+        <button type="button" class="button adopt" (click)="adoptCatMet(cats.id)">Örökbefogad</button>
+    </div>
+</div>

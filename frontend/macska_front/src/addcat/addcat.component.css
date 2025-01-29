@@ -1,0 +1,47 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    margin-top:-8em;
+    padding:0;
+    background-color: #FBFBFB;
+  }
+  
+  .customForm {
+    width: 30%; 
+  }
+  
+  .frmCustom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+.btnCustom{
+    margin-top:10px;
+    margin-left:250px;
+}
+.error{
+  margin-top: 10px;
+  color: red;
+}
+.btnCustom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top:1.5em;
+  margin-left:8em;
+  background-color: #C4D9FF;
+  border:none;
+  color:#FBFBFB;
+  border-radius: 10px;
+  transition: background-color 1s ease;
+}
+.btnCustom:hover{
+  background-color: #AFCFFF;
+}
+h1{
+  margin:0;
+  background-color: #FBFBFB;
+}

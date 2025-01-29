@@ -1,0 +1,15 @@
+.navbar {
+    background-color:#C5BAFF !important;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 50px;
+    color:  #FBFBFB;
+}
+
+.nav-link:hover {
+   background-color: #C4D9FF;
+   border-radius: 10px;
+}

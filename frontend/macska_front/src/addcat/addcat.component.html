@@ -1,0 +1,27 @@
+<h1 class="catname" class="title text-center pt-3 pb-3">Macska hozzáadása</h1>
+<div class="center">
+  <form class="customForm" (ngSubmit)="onSubmit()" #catForm="ngForm">
+    <div class="form-group">
+      <label for="catname" class="pt-2 pb-1">Macska név</label>
+      <input type="text" class="form-control frmCustom" id="catName" placeholder="Pityu" [(ngModel)]="cat.catname" name="catname" required>
+      <div *ngIf="catForm.controls['catname']?.invalid && catForm.controls['catname']?.touched" class="error" minlength="1" maxlength="20">
+        Macska név megadása kötelező.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="catDescription" class="pt-2 pb-1">Macska kép</label>
+      <input type="url" class="form-control frmCustom" id="catPicture" placeholder="Kép URL" [(ngModel)]="cat.catpicture" name="catpicture" required>
+      <div *ngIf="catForm.controls['catpicture']?.invalid && catForm.controls['catpicture']?.touched" class="error" minglength="1">
+        Macska képet kötelező megadni
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="catDescription" class="pt-2 pb-1">Macska leírás</label>
+        <textarea class="form-control frmCustom" id="catDescription" placeholder="Pityu szeret mászni" [(ngModel)]="cat.description" name="description" required></textarea>
+        <div *ngIf="catForm.controls['description']?.invalid && catForm.controls['description']?.touched" class="error" minleght = "1" maxlength="100">
+          Macska leírás megadása kötelező.
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary btnCustom" [disabled]="catForm.invalid">Hozzáadás</button>
+  </form>
+</div>

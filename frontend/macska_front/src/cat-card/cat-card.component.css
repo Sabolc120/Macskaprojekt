@@ -1,0 +1,36 @@
+
+.hover-style a {
+    position: relative;
+    text-decoration: none; 
+    color: #E8F9FF; 
+    transition: color 300ms ease; 
+}
+
+.hover-style a::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    height: 2px; 
+    width: 0; 
+    background-color: #E8F9FF; 
+    transition: width 300ms ease, transform 300ms ease; 
+    transform: translateY(5px); 
+}
+
+
+.hover-style a:hover::after {
+    width: 100%;
+    transform: translateY(0); 
+}
+a{
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.catPicture {
+    width: 80%; 
+    height: 450px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    margin-top: 10px;
+}

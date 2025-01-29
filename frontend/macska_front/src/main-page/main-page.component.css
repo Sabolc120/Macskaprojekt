@@ -1,0 +1,44 @@
+.margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* Tartalom függőlegesen rendezve */
+    justify-content: space-between; /* Egyenletes elosztás */
+    height: 100%; /* Kártyák kitöltik a rendelkezésre álló helyet */
+    background-color: #C4D9FF;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid #FBFBFB;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    background-color: #AFCFFF;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.catname {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box:hover {
+    background-color: #AFCFFF; 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.col-sm-4:hover {
+    background-color: #C5BAFF;
+}
+.container-fluid{
+    background-color: #FBFBFB;
+}
